@@ -71,7 +71,6 @@ body {
 
 .submit-form {
   padding-top: 5rem;
-  position: relative;
 }
 
 .line {
@@ -84,9 +83,6 @@ body {
   border: none;
   padding: 2.5rem;
   border-radius: 100px;
-  position: absolute;
-  top: 0;
-  right: 0;
   cursor: pointer;
   transition: all 0.2s;
 }
@@ -109,4 +105,51 @@ body {
 
 .number {
   color: var(--color-purple);
+}
+
+@media screen and (max-width: 768px) {
+  .age-calculator {
+    width: 100%;
+  }
+
+  .submit-form {
+    margin-top: 2rem;
+  }
+
+  .btn-submit {
+    right: 50%;
+  }
+
+  .result {
+    padding-top: 7rem;
+  }
+}
+
+@media screen and (max-width: 432px) {
+  .age-calculator {
+    width: 35rem;
+    padding: 3rem;
+  }
+
+  .inputs {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .input-container label {
+    margin-bottom: 1rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .input-container input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 2.7rem;
+    height: fit-content;
+  }
+
+  .dateText {
+    font-size: 5.5rem;
+    line-height: 6rem;
+  }
 }
