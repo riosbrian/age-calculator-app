@@ -5,42 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Age calculator app</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main class="app-container">
       <div class="age-calculator">
         <form action="" class="calculator-form">
-          <div class="calculator-form__input">
-            <label for="day">Día</label>
-            <input name="day" type="text" />
+          <div class="inputs">
+            <div class="input-container">
+              <label for="day">Day</label>
+              <input type="number" maxlength="2" />
+            </div>
+            <div class="input-container">
+              <label for="month">Month</label>
+              <input type="number" maxlength="2" />
+            </div>
+            <div class="input-container">
+              <label for="number">Year</label>
+              <input type="number" maxlength="4" />
+            </div>
           </div>
-          <div class="calculator-form__input">
-            <label for="month">Mes</label>
-            <input name="month" type="text" />
-          </div>
-          <div class="calculator-form__input">
-            <label for="year">Año</label>
-            <input name="year" type="text" />
-          </div>
-          <div class="calculator-form__submit">
+          <div class="submit-form">
             <div class="line"></div>
-            <button type="submit">
-              <img src="./img/icon-arrow.svg" alt="arrow-icon" />
+            <button class="btn-submit" type="submit">
+              <img src="./img/icon-arrow.svg" alt="" />
             </button>
           </div>
         </form>
-        <div class="age-result">
-          <p class="dateText dateText--day">
-            <span class="number">--</span>Días
-          </p>
-          <p class="dateText dateText--month">
-            <span class="number">--</span>Meses
-          </p>
-          <p class="dateText dateText--year">
-            <span class="number">--</span>Años
-          </p>
+        <div class="result">
+          <p class="dateText"><span class="number">--</span>days</p>
+          <p class="dateText"><span class="number">--</span>months</p>
+          <p class="dateText"><span class="number">--</span>years</p>
         </div>
       </div>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
